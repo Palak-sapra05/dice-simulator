@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Rolling Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dice Rolling Simulator</h1>
+
+        <div class="setup-section">
+            <label for="numDice">Number of Dice:</label>
+            <input type="number" id="numDice" value="1" min="1"><br>
+
+            <label for="numSides">Sides per Die:</label>
+            <input type="number" id="numSides" value="6" min="2"><br>
+
+            <label for="numPlayers">Number of Players:</label>
+            <input type="number" id="numPlayers" value="2" min="1"><br>
+            <button id="addPlayerBtn">Add Players</button>
+        </div>
+
+        <div id="players-input-container">
+            </div>
+
+        <button id="startGameBtn">Start Game</button>
+        <button id="rollDiceBtn" style="display:none;">Roll Dice</button>
+
+        <div class="display-area">
+            <div id="dice-container">
+                </div>
+            <div id="results">
+                </div>
+        </div>
+
+        <div id="scoreboard-container" style="display:none;">
+            <h2>Scoreboard</h2>
+            <ul id="scoreboard">
+                </ul>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
